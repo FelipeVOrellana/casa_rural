@@ -8,7 +8,7 @@
                 <list string="Servicios">
                     <field name="nombre_servicio"/>
                     <field name="precio"/>
-                    <field name="tipo_servicio"/>
+                    <field name="tipo_servicio_id"/>
                 </list>
             </field>
         </record>
@@ -22,18 +22,18 @@
                         <group>
                             <field name="nombre_servicio"/>
                             <field name="precio"/>
-                            <field name="tipo_servicio"/>
+                            <field name="tipo_servicio_id"/>
                         </group>
                         <group>
                             <field name="descripcion"/>
                         </group>
                         <notebook>
-                            <page string="Proveedores">
-                                <field name="proveedor_ids">
+                            <page string="Incidencias">
+                                <field name="incidencia_ids">
                                     <list>
-                                        <field name="nombre"/>
-                                        <field name="contacto"/>
-                                        <field name="telefono"/>
+                                        <field name="fecha_incidencia"/>
+                                        <field name="estado_incidencia"/>
+                                        <field name="descripcion"/>
                                     </list>
                                 </field>
                             </page>

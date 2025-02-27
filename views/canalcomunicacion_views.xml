@@ -7,7 +7,6 @@
             <field name="arch" type="xml">
                 <list string="Canales de Comunicación">
                     <field name="nombre_canal"/>
-                    <field name="descripcion"/>
                 </list>
             </field>
         </record>
@@ -26,8 +25,9 @@
                             <page string="Mensajes">
                                 <field name="mensaje_ids">
                                     <list>
-                                        <field name="contenido"/>
+                                        <field name="asunto"/>
                                         <field name="fecha_envio"/>
+                                        <field name="estado"/>
                                     </list>
                                 </field>
                             </page>
@@ -44,5 +44,3 @@
         </record>
     </data>
 </odoo>
-
-

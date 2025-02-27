@@ -21,19 +21,10 @@
                         <group>
                             <field name="nombre_extra"/>
                             <field name="precio"/>
+                        </group>
+                        <group>
                             <field name="descripcion"/>
                         </group>
-                        <notebook>
-                            <page string="Reservas">
-                                <field name="reserva_ids">
-                                    <list>
-                                        <field name="fecha_inicio"/>
-                                        <field name="fecha_fin"/>
-                                        <field name="cliente_id"/>
-                                    </list>
-                                </field>
-                            </page>
-                        </notebook>
                     </sheet>
                 </form>
             </field>

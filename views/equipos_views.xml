@@ -27,12 +27,11 @@
                             <field name="estado"/>
                         </group>
                         <notebook>
-                            <page string="Tareas de Mantenimiento">
+                            <page string="Tareas">
                                 <field name="tarea_ids">
                                     <list>
                                         <field name="nombre_tarea"/>
                                         <field name="fecha_programada"/>
-                                        <field name="fecha_realizada"/>
                                         <field name="estado"/>
                                     </list>
                                 </field>
@@ -47,6 +46,6 @@
             <field name="name">Equipos</field>
             <field name="res_model">casa_rural.equipo</field>
             <field name="view_mode">list,form</field>
-        </record>        
+        </record>
     </data>
 </odoo>

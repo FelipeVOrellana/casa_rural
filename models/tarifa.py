@@ -16,3 +16,9 @@ class Tarifa(models.Model):
     ], string="Temporada", required=True)
     fecha_inicio = fields.Date(string="Fecha de Inicio", required=True)
     fecha_fin = fields.Date(string="Fecha de Fin", required=True)
+    habitacion_ids = fields.Many2many(
+        'casa_rural.habitacion',
+        'casa_rural_tarifa_habitacion_rel',
+        'tarifa_id', 'habitacion_id',
+        string='Habitaciones'
+    )

@@ -30,6 +30,17 @@
                             <field name="fecha_inicio"/>
                             <field name="fecha_fin"/>
                         </group>
+                        <notebook>
+                            <page string="Habitaciones">
+                                <field name="habitacion_ids">
+                                    <list>
+                                        <field name="nombre"/>
+                                        <field name="tipo_habitacion"/>
+                                        <field name="capacidad"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

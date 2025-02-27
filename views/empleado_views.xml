@@ -27,12 +27,11 @@
                             <field name="email"/>
                         </group>
                         <notebook>
-                            <page string="Tareas de Mantenimiento">
+                            <page string="Tareas">
                                 <field name="tarea_ids">
                                     <list>
                                         <field name="nombre_tarea"/>
                                         <field name="fecha_programada"/>
-                                        <field name="fecha_realizada"/>
                                         <field name="estado"/>
                                     </list>
                                 </field>

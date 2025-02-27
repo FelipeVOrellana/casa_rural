@@ -1,71 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <!-- Menú padre: Casa Rural -->
-        <menuitem id="casa_rural.menu_root" name="Casa Rural" sequence="10"/>
+    <!-- Menú principal -->
+    <menuitem id="menu_casa_rural" name="Casa Rural" sequence="1" />
 
-        <!-- Submenú: Habitaciones -->
-        <menuitem id="casa_rural.menu_habitacion_root" name="Habitaciones" parent="casa_rural.menu_root" sequence="20"/>
-        <menuitem id="casa_rural.menu_habitacion" name="Habitaciones" parent="casa_rural.menu_habitacion_root" action="casa_rural.action_habitacion" sequence="10"/>
+    <!-- Gestión de Clientes -->
+    <menuitem id="menu_gestion_clientes" name="Gestión de Clientes" parent="menu_casa_rural" sequence="1" />
+    <menuitem id="menu_huespedes" name="Huéspedes" parent="menu_gestion_clientes" action="action_huesped" sequence="1" />
+    <menuitem id="menu_estancias" name="Estancias" parent="menu_gestion_clientes" action="action_estancia" sequence="2" />
+    <menuitem id="menu_habitaciones" name="Habitaciones" parent="menu_gestion_clientes" action="action_habitacion" sequence="3" />
+    <menuitem id="menu_facturacion_clientes" name="Facturación Clientes" parent="menu_gestion_clientes" action="action_facturacion_clientes" sequence="4" />
+    <menuitem id="menu_pagos_clientes" name="Pagos Clientes" parent="menu_gestion_clientes" action="action_pagos_clientes" sequence="5" />
 
-        <!-- Submenú: Huéspedes -->
-        <menuitem id="casa_rural.menu_huesped_root" name="Huéspedes" parent="casa_rural.menu_root" sequence="30"/>
-        <menuitem id="casa_rural.menu_huesped" name="Huéspedes" parent="casa_rural.menu_huesped_root" action="casa_rural.action_huesped" sequence="10"/>
+    <!-- Gestión de Tarifas y Pagos -->
+    <menuitem id="menu_gestion_tarifas" name="Gestión de Tarifas y Pagos" parent="menu_casa_rural" sequence="2" />
+    <menuitem id="menu_tarifas" name="Tarifas" parent="menu_gestion_tarifas" action="action_tarifa" sequence="1" />
 
-        <!-- Submenú: Estancias -->
-        <menuitem id="casa_rural.menu_estancia_root" name="Estancias" parent="casa_rural.menu_root" sequence="40"/>
-        <menuitem id="casa_rural.menu_estancia" name="Estancias" parent="casa_rural.menu_estancia_root" action="casa_rural.action_estancia" sequence="10"/>
+    <!-- Gestión de Proveedores y Servicios Externos -->
+    <menuitem id="menu_gestion_proveedores" name="Gestión de Proveedores y Servicios Externos" parent="menu_casa_rural" sequence="3" />
+    <menuitem id="menu_proveedores" name="Proveedores" parent="menu_gestion_proveedores" action="action_proveedor" sequence="1" />
+    <menuitem id="menu_servicios" name="Servicios" parent="menu_gestion_proveedores" action="action_servicio" sequence="2" />
+    <menuitem id="menu_tipos_servicio" name="Tipos de Servicio" parent="menu_gestion_proveedores" action="action_tipo_servicio" sequence="3" />
+    <menuitem id="menu_contratos" name="Contratos" parent="menu_gestion_proveedores" action="action_contrato" sequence="4" />
+    <menuitem id="menu_pedidos" name="Pedidos" parent="menu_gestion_proveedores" action="action_pedido" sequence="5" />
+    <menuitem id="menu_productos" name="Productos" parent="menu_gestion_proveedores" action="action_producto" sequence="6" />
+    <menuitem id="menu_detalle_pedido" name="Detalle de Pedido" parent="menu_gestion_proveedores" action="action_detalle_pedido" sequence="7" />
+    <menuitem id="menu_facturacion_proveedores" name="Facturación Proveedores" parent="menu_gestion_proveedores" action="action_facturacion_proveedores" sequence="8" />
+    <menuitem id="menu_pagos_proveedores" name="Pagos Proveedores" parent="menu_gestion_proveedores" action="action_pagos_proveedores" sequence="9" />
+    <menuitem id="menu_incidencias" name="Incidencias" parent="menu_gestion_proveedores" action="action_incidencia" sequence="10" />
 
-        <!-- Submenú: Facturas -->
-        <menuitem id="casa_rural.menu_factura_root" name="Facturas" parent="casa_rural.menu_root" sequence="50"/>
-        <menuitem id="casa_rural.menu_factura" name="Facturas" parent="casa_rural.menu_factura_root" action="casa_rural.action_factura" sequence="10"/>
-    
-        <!-- Submenú: Empleados -->
-        <menuitem id="casa_rural.menu_empleado_root" name="Empleados" parent="casa_rural.menu_root" sequence="60"/>
-        <menuitem id="casa_rural.menu_empleado" name="Empleados" parent="casa_rural.menu_empleado_root" action="casa_rural.action_empleado" sequence="10"/>
+    <!-- Comunicación con los Clientes -->
+    <menuitem id="menu_comunicacion_clientes" name="Comunicación con los Clientes" parent="menu_casa_rural" sequence="4" />
+    <menuitem id="menu_clientes_com" name="Clientes" parent="menu_comunicacion_clientes" action="action_clientes_com" sequence="1" />
+    <menuitem id="menu_mensajes" name="Mensajes" parent="menu_comunicacion_clientes" action="action_mensaje" sequence="2" />
+    <menuitem id="menu_canales_comunicacion" name="Canales de Comunicación" parent="menu_comunicacion_clientes" action="action_canales_comunicacion" sequence="3" />
 
-        <!-- Submenú: Equipos -->
-        <menuitem id="casa_rural.menu_equipo_root" name="Equipos" parent="casa_rural.menu_root" sequence="70"/>
-        <menuitem id="casa_rural.menu_equipo" name="Equipos" parent="casa_rural.menu_equipo_root" action="casa_rural.action_equipo" sequence="10"/>
-   
-        <!-- Submenú: Canales de Comunicacion -->
-        <menuitem id="casa_rural.menu_canalescomunicacion_root" name="Canales de Comunicacion" parent="casa_rural.menu_root" sequence="80"/>
-        <menuitem id="casa_rural.menu_canalescomunicacion" name="Canales de Comunicacion" parent="casa_rural.menu_canalescomunicacion_root" action="casa_rural.action_canal_comunicacion" sequence="10"/>
+    <!-- Gestión de Mantenimiento y Limpieza -->
+    <menuitem id="menu_mantenimiento" name="Gestión de Mantenimiento y Limpieza" parent="menu_casa_rural" sequence="5" />
+    <menuitem id="menu_empleados" name="Empleados" parent="menu_mantenimiento" action="action_empleado" sequence="1" />
+    <menuitem id="menu_tareas_mantenimiento" name="Tareas de Mantenimiento" parent="menu_mantenimiento" action="action_tarea_mantenimiento" sequence="2" />
+    <menuitem id="menu_equipos" name="Equipos" parent="menu_mantenimiento" action="action_equipo" sequence="3" />
 
-        <!-- Submenú: Extras -->
-        <menuitem id="casa_rural.menu_extra_root" name="Extras" parent="casa_rural.menu_root" sequence="90"/>
-        <menuitem id="casa_rural.menu_extra" name="Extras" parent="casa_rural.menu_extra_root" action="casa_rural.action_extra" sequence="10"/>
-        
-        <!-- Submenú: Incidencias -->
-        <menuitem id="casa_rural.menu_incidencia_root" name="Incidencias" parent="casa_rural.menu_root" sequence="100"/>
-        <menuitem id="casa_rural.menu_incidencia" name="Incidencias" parent="casa_rural.menu_incidencia_root" action="casa_rural.action_incidencia" sequence="10"/>
-
-        <!-- Submenú: Pagos -->
-        <menuitem id="casa_rural.menu_pago_root" name="Pagos" parent="casa_rural.menu_root" sequence="110"/>
-        <menuitem id="casa_rural.menu_pago" name="Pagos" parent="casa_rural.menu_pago_root" action="casa_rural.action_pago" sequence="10"/>
-        
-        <!-- Submenú: Mensajes -->
-        <menuitem id="casa_rural.menu_mensaje_root" name="Mensajes" parent="casa_rural.menu_root" sequence="120"/>
-        <menuitem id="casa_rural.menu_mensaje" name="Mensajes" parent="casa_rural.menu_mensaje_root" action="casa_rural.action_mensaje" sequence="10"/>
-
-        <!-- Submenú: Provedor -->
-        <menuitem id="casa_rural.menu_proveedor_root" name="Provedores" parent="casa_rural.menu_root" sequence="130"/>
-        <menuitem id="casa_rural.menu_proveedor" name="Provedores" parent="casa_rural.menu_proveedor_root" action="casa_rural.action_proveedor" sequence="10"/>
-
-        <!-- Submenu: Reservas-->
-        <menuitem id="casa_rural.menu_reserva_root" name="Reservas" parent="casa_rural.menu_root" sequence="140"/>
-        <menuitem id="casa_rural.menu_reserva" name="Reservas" parent="casa_rural.menu_reserva_root" action="casa_rural.action_reserva" sequence="10"/>
-
-        <!-- Submenu: Tarifas-->
-        <menuitem id="casa_rural.menu_tarifa_root" name="Tarifas" parent="casa_rural.menu_root" sequence="150"/>
-        <menuitem id="casa_rural.menu_tarifa" name="Tarifas" parent="casa_rural.menu_tarifa_root" action="casa_rural.action_tarifa" sequence="10"/>
-        
-        <!-- Submenu: Tipo de Servicio-->
-        <menuitem id="casa_rural.menu_servicio_root" name="Servicios" parent="casa_rural.menu_root" sequence="160"/>
-        <menuitem id="casa_rural.menu_servicio" name="Servicios" parent="casa_rural.menu_servicio_root" action="casa_rural.action_servicio" sequence="10"/>
-
-        <!-- Submenu: Tareas de Manetimineto-->
-        <menuitem id="casa_rural.menu_tareamantenimiento_root" name="Tareas Mantenimiento" parent="casa_rural.menu_root" sequence="170"/>
-        <menuitem id="casa_rural.menu_tareamantenimiento" name="Tareas Mantenimiento" parent="casa_rural.menu_tareamantenimiento_root" action="casa_rural.action_tarea_mantenimiento" sequence="10"/>
-    </data>
+    <!-- Extras y Mejoras Opcionales -->
+    <menuitem id="menu_extras" name="Extras y Mejoras Opcionales" parent="menu_casa_rural" sequence="6" />
+    <menuitem id="menu_extras_extra" name="Extras" parent="menu_extras" action="action_extra" sequence="1" />
+    <menuitem id="menu_reservas" name="Reservas" parent="menu_extras" action="action_reserva" sequence="2" />
+    <menuitem id="menu_extras_reservas" name="Extras en Reservas" parent="menu_extras" action="action_extras_reservas" sequence="3" />
 </odoo>

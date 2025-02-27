@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_pedido_list">
+            <field name="name">casa_rural.pedido.list</field>
+            <field name="model">casa_rural.pedido</field>
+            <field name="arch" type="xml">
+                <list string="Pedidos">
+                    <field name="proveedor_id"/>
+                    <field name="fecha_pedido"/>
+                    <field name="estado"/>
+                    <field name="fecha_entrega"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_pedido_form">
+            <field name="name">casa_rural.pedido.form</field>
+            <field name="model">casa_rural.pedido</field>
+            <field name="arch" type="xml">
+                <form string="Pedido">
+                    <sheet>
+                        <group>
+                            <field name="proveedor_id"/>
+                            <field name="fecha_pedido"/>
+                            <field name="estado"/>
+                            <field name="fecha_entrega"/>
+                        </group>
+                        <notebook>
+                            <page string="Detalle del Pedido">
+                                <field name="detalle_ids">
+                                    <list>
+                                        <field name="producto"/>
+                                        <field name="cantidad"/>
+                                        <field name="precio_unitario"/>
+                                    </list>
+                                </field>
+                            </page>
+                            <page string="Facturación">
+                                <field name="factura_ids">
+                                    <list>
+                                        <field name="numero_factura"/>
+                                        <field name="fecha_emision"/>
+                                        <field name="monto"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_pedido">
+            <field name="name">Pedidos</field>
+            <field name="res_model">casa_rural.pedido</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

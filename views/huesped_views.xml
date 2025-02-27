@@ -6,7 +6,6 @@
             <field name="model">casa_rural.huesped</field>
             <field name="arch" type="xml">
                 <list string="Huéspedes">
-                    <field name="id"/>
                     <field name="nombre"/>
                     <field name="apellidos"/>
                     <field name="dni"/>

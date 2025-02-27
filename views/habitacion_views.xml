@@ -13,7 +13,7 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="casa_rural.view_habitacion_form">
+        <record model="ir.ui.view" id="view_habitacion_form">
             <field name="name">casa_rural.habitacion.form</field>
             <field name="model">casa_rural.habitacion</field>
             <field name="arch" type="xml">
@@ -24,6 +24,18 @@
                             <field name="tipo"/>
                             <field name="estado"/>
                         </group>
+                        <notebook>
+                            <page string="Estancias">
+                                <field name="estancias_ids">
+                                    <list>
+                                        <field name="huesped_id"/>
+                                        <field name="fecha_entrada"/>
+                                        <field name="fecha_salida"/>
+                                        <field name="precio_total"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

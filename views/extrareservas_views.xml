@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_extras_reservas_list">
+            <field name="name">casa_rural.extras_reservas.list</field>
+            <field name="model">casa_rural.extras_reservas</field>
+            <field name="arch" type="xml">
+                <list string="Extras Reservas">
+                    <field name="reserva_id"/>
+                    <field name="extra_id"/>
+                    <field name="cantidad"/>
+                    <field name="precio_total"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_extras_reservas_form">
+            <field name="name">casa_rural.extras_reservas.form</field>
+            <field name="model">casa_rural.extras_reservas</field>
+            <field name="arch" type="xml">
+                <form string="Extras Reserva">
+                    <sheet>
+                        <group>
+                            <field name="reserva_id"/>
+                            <field name="extra_id"/>
+                            <field name="cantidad"/>
+                            <field name="precio_total"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_extras_reservas">
+            <field name="name">Extras Reservas</field>
+            <field name="res_model">casa_rural.extras_reservas</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

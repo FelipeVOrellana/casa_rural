@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_facturacion_clientes_list">
+            <field name="name">casa_rural.facturacion_clientes.list</field>
+            <field name="model">casa_rural.facturacion_clientes</field>
+            <field name="arch" type="xml">
+                <list string="Facturación Clientes">
+                    <field name="estancia_id"/>
+                    <field name="monto"/>
+                    <field name="fecha_emision"/>
+                    <field name="estado_pago"/>
+                    <field name="metodo_pago"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_facturacion_clientes_form">
+            <field name="name">casa_rural.facturacion_clientes.form</field>
+            <field name="model">casa_rural.facturacion_clientes</field>
+            <field name="arch" type="xml">
+                <form string="Facturación Cliente">
+                    <sheet>
+                        <group>
+                            <field name="estancia_id"/>
+                            <field name="monto"/>
+                            <field name="fecha_emision"/>
+                            <field name="estado_pago"/>
+                            <field name="metodo_pago"/>
+                        </group>
+                        <notebook>
+                            <page string="Pagos">
+                                <field name="pago_ids">
+                                    <list>
+                                        <field name="fecha_pago"/>
+                                        <field name="monto"/>
+                                        <field name="metodo_pago"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_facturacion_clientes">
+            <field name="name">Facturación Clientes</field>
+            <field name="res_model">casa_rural.facturacion_clientes</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

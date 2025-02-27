@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_facturacion_proveedores_list">
+            <field name="name">casa_rural.facturacion_proveedores.list</field>
+            <field name="model">casa_rural.facturacion_proveedores</field>
+            <field name="arch" type="xml">
+                <list string="Facturación Proveedores">
+                    <field name="monto_total"/>
+                    <field name="fecha_emision"/>
+                    <field name="estado_pago"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_facturacion_proveedores_form">
+            <field name="name">casa_rural.facturacion_proveedores.form</field>
+            <field name="model">casa_rural.facturacion_proveedores</field>
+            <field name="arch" type="xml">
+                <form string="Facturación Proveedores">
+                    <sheet>
+                        <group>
+                            <field name="monto_total"/>
+                            <field name="fecha_emision"/>
+                            <field name="estado_pago"/>
+                        </group>
+                        <notebook>
+                            <page string="Pagos">
+                                <field name="pago_ids">
+                                    <list>
+                                        <field name="fecha_pago"/>
+                                        <field name="monto"/>
+                                        <field name="metodo_pago"/>
+                                    </list>
+                                </field>
+                            </page>
+                            <page string="Pedidos">
+                                <field name="pedido_ids">
+                                    <list>
+                                        <field name="proveedor_id"/>
+                                        <field name="fecha_pedido"/>
+                                        <field name="estado"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_facturacion_proveedores">
+            <field name="name">Facturación Proveedores</field>
+            <field name="res_model">casa_rural.facturacion_proveedores</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

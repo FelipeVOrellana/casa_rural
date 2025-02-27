@@ -18,3 +18,13 @@ from . import servicio
 from . import tareamantenimiento
 from . import tiposervicio
 from . import tarifa
+from . import cliente
+from . import contrato
+from . import detallepedido
+from . import extrareservas
+from . import facturacionclientes
+from . import facturacionproveedores
+from . import pagocliente
+from . import pagoproveedor
+from . import pedido
+from . import producto

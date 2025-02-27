@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_pagos_proveedores_list">
+            <field name="name">casa_rural.pagos_proveedores.list</field>
+            <field name="model">casa_rural.pagos_proveedores</field>
+            <field name="arch" type="xml">
+                <list string="Pagos Proveedores">
+                    <field name="factura_id"/>
+                    <field name="monto"/>
+                    <field name="fecha_pago"/>
+                    <field name="metodo_pago"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_pagos_proveedores_form">
+            <field name="name">casa_rural.pagos_proveedores.form</field>
+            <field name="model">casa_rural.pagos_proveedores</field>
+            <field name="arch" type="xml">
+                <form string="Pago Proveedor">
+                    <sheet>
+                        <group>
+                            <field name="factura_id"/>
+                            <field name="monto"/>
+                            <field name="fecha_pago"/>
+                            <field name="metodo_pago"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_pagos_proveedores">
+            <field name="name">Pagos Proveedores</field>
+            <field name="res_model">casa_rural.pagos_proveedores</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

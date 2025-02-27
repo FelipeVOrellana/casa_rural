@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_detalle_pedido_list">
+            <field name="name">casa_rural.detalle_pedido.list</field>
+            <field name="model">casa_rural.detalle_pedido</field>
+            <field name="arch" type="xml">
+                <list string="Detalle del Pedido">
+                    <field name="pedido_id"/>
+                    <field name="producto_id"/>
+                    <field name="cantidad"/>
+                    <field name="precio_unitario"/>
+                    <field name="subtotal"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_detalle_pedido_form">
+            <field name="name">casa_rural.detalle_pedido.form</field>
+            <field name="model">casa_rural.detalle_pedido</field>
+            <field name="arch" type="xml">
+                <form string="Detalle del Pedido">
+                    <sheet>
+                        <group>
+                            <field name="pedido_id"/>
+                            <field name="producto_id"/>
+                            <field name="cantidad"/>
+                            <field name="precio_unitario"/>
+                            <field name="subtotal"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_detalle_pedido">
+            <field name="name">Detalle del Pedido</field>
+            <field name="res_model">casa_rural.detalle_pedido</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

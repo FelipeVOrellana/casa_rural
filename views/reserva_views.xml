@@ -27,12 +27,12 @@
                             <field name="cantidad_personas"/>
                         </group>
                         <notebook>
-                            <page string="Extras">
-                                <field name="extra_ids">
+                            <page string="Extras Agregados">
+                                <field name="extras_reserva_ids">
                                     <list>
-                                        <field name="nombre_extra"/>
-                                        <field name="descripcion"/>
-                                        <field name="precio"/>
+                                        <field name="extra_id"/>
+                                        <field name="cantidad"/>
+                                        <field name="precio_total"/>
                                     </list>
                                 </field>
                             </page>

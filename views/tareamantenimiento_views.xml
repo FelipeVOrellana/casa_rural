@@ -7,11 +7,11 @@
             <field name="arch" type="xml">
                 <list string="Tareas de Mantenimiento">
                     <field name="nombre_tarea"/>
+                    <field name="empleado_id"/>
+                    <field name="habitacion_id"/>
                     <field name="fecha_programada"/>
                     <field name="fecha_realizada"/>
                     <field name="estado"/>
-                    <field name="empleado_id"/>
-                    <field name="habitacion_id"/>
                 </list>
             </field>
         </record>
@@ -24,11 +24,11 @@
                     <sheet>
                         <group>
                             <field name="nombre_tarea"/>
+                            <field name="empleado_id"/>
+                            <field name="habitacion_id"/>
                             <field name="fecha_programada"/>
                             <field name="fecha_realizada"/>
                             <field name="estado"/>
-                            <field name="empleado_id"/>
-                            <field name="habitacion_id"/>
                         </group>
                         <group>
                             <field name="descripcion"/>
