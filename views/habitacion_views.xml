@@ -9,7 +9,6 @@
                     <field name="numero"/>
                     <field name="tipo"/>
                     <field name="estado"/>
-                    <field name="precio_noche"/>
                 </list>
             </field>
         </record>
@@ -24,7 +23,6 @@
                             <field name="numero"/>
                             <field name="tipo"/>
                             <field name="estado"/>
-                            <field name="precio_noche"/>
                         </group>
                     </sheet>
                 </form>

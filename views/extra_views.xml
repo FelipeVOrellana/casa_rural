@@ -27,7 +27,6 @@
                             <page string="Reservas">
                                 <field name="reserva_ids">
                                     <list>
-                                        <field name="nombre_reserva"/>
                                         <field name="fecha_inicio"/>
                                         <field name="fecha_fin"/>
                                         <field name="cliente_id"/>

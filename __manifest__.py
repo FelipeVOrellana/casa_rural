@@ -9,13 +9,12 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/menu.xml',
         'views/huesped_views.xml',
         'views/estancia_views.xml',
         'views/factura_views.xml',
         'views/habitacion_views.xml',
         'views/canalcomunicacion_views.xml',
-        'views/empleados_views.xml',
+        'views/empleado_views.xml',
         'views/equipos_views.xml',
         'views/extra_views.xml',
         'views/incidencia_views.xml',
@@ -26,7 +25,8 @@
         'views/servicio_views.xml',
         'views/tarifa_views.xml',
         'views/tiposervicio_views.xml',
-        'views/tareamantenimiento_views.xml'
+        'views/tareamantenimiento_views.xml',
+        'views/menu.xml'
         ,
     ],
     'installable': True,

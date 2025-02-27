@@ -28,7 +28,6 @@
                                     <list>
                                         <field name="contenido"/>
                                         <field name="fecha_envio"/>
-                                        <field name="remitente_id"/>
                                     </list>
                                 </field>
                             </page>

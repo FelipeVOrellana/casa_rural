@@ -33,7 +33,6 @@
                                         <field name="numero"/>
                                         <field name="tipo"/>
                                         <field name="estado"/>
-                                        <field name="precio_noche"/>
                                     </list>
                                 </field>
                             </page>
