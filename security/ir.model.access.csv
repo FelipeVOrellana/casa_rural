@@ -3,3 +3,16 @@ access_casa_rural_huesped,access_huesped,casa_rural.model_casa_rural_huesped,,1,
 access_casa_rural_estancia,access_estancia,casa_rural.model_casa_rural_estancia,,1,1,1,1
 access_casa_rural_factura,access_factura,casa_rural.model_casa_rural_factura,,1,1,1,1
 access_casa_rural_habitacion,access_habitacion,casa_rural.model_casa_rural_habitacion,,1,1,1,1
+access_casa_rural_canalcomunicacion,access_canalcomunicacion,casa_rural.model_casa_rural_canalcomunicacion,,1,1,1,1
+access_casa_rural_empleado,access_empleado,casa_rural.model_casa_rural_empleado,,1,1,1,1
+access_casa_rural_equipo,access_equipo,casa_rural.model_casa_rural_equipo,,1,1,1,1
+access_casa_rural_extra,access_extra,casa_rural.model_casa_rural_extra,,1,1,1,1
+access_casa_rural_incidencia,access_incidencia,casa_rural.model_casa_rural_incidencia,,1,1,1,1
+access_casa_rural_mensaje,access_mensaje,casa_rural.model_casa_rural_mensaje,,1,1,1,1
+access_casa_rural_pago,access_pago,casa_rural.model_casa_rural_pago,,1,1,1,1
+access_casa_rural_proveedor,access_proveedor,casa_rural.model_casa_rural_proveedor,,1,1,1,1
+access_casa_rural_reserva,access_reserva,casa_rural.model_casa_rural_reserva,,1,1,1,1
+access_casa_rural_servicio,access_servicio,casa_rural.model_casa_rural_servicio,,1,1,1,1
+access_casa_rural_tareamantenimiento,access_tareamantenimiento,casa_rural.model_casa_rural_tareamantenimiento,,1,1,1,1
+access_casa_rural_tarifa,access_tarifa,casa_rural.model_casa_rural_tarifa,,1,1,1,1
+access_casa_rural_tiposervicio,access_tiposervicio,casa_rural.model_casa_rural_tiposervicio,,1,1,1,1
