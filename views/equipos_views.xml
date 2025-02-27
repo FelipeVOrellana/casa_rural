@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_equipo_list">
+            <field name="name">casa_rural.equipo.list</field>
+            <field name="model">casa_rural.equipo</field>
+            <field name="arch" type="xml">
+                <list string="Equipos">
+                    <field name="nombre_equipo"/>
+                    <field name="tipo_equipo"/>
+                    <field name="fecha_adquisicion"/>
+                    <field name="estado"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_equipo_form">
+            <field name="name">casa_rural.equipo.form</field>
+            <field name="model">casa_rural.equipo</field>
+            <field name="arch" type="xml">
+                <form string="Equipo">
+                    <sheet>
+                        <group>
+                            <field name="nombre_equipo"/>
+                            <field name="tipo_equipo"/>
+                            <field name="fecha_adquisicion"/>
+                            <field name="estado"/>
+                        </group>
+                        <notebook>
+                            <page string="Tareas de Mantenimiento">
+                                <field name="tarea_ids">
+                                    <list>
+                                        <field name="nombre_tarea"/>
+                                        <field name="fecha_programada"/>
+                                        <field name="fecha_realizada"/>
+                                        <field name="estado"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_equipo">
+            <field name="name">Equipos</field>
+            <field name="res_model">casa_rural.equipo</field>
+            <field name="view_mode">list,form</field>
+        </record>        
+    </data>
+</odoo>

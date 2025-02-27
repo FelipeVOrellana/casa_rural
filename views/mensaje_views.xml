@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_mensaje_list">
+            <field name="name">casa_rural.mensaje.list</field>
+            <field name="model">casa_rural.mensaje</field>
+            <field name="arch" type="xml">
+                <list string="Mensajes">
+                    <field name="cliente_id"/>
+                    <field name="fecha_envio"/>
+                    <field name="asunto"/>
+                    <field name="estado"/>
+                    <field name="canal_comunicacion_id"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_mensaje_form">
+            <field name="name">casa_rural.mensaje.form</field>
+            <field name="model">casa_rural.mensaje</field>
+            <field name="arch" type="xml">
+                <form string="Mensaje">
+                    <sheet>
+                        <group>
+                            <field name="cliente_id"/>
+                            <field name="fecha_envio"/>
+                            <field name="asunto"/>
+                            <field name="estado"/>
+                            <field name="canal_comunicacion_id"/>
+                        </group>
+                        <group>
+                            <field name="contenido" colspan="2"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_mensaje">
+            <field name="name">Mensajes</field>
+            <field name="res_model">casa_rural.mensaje</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

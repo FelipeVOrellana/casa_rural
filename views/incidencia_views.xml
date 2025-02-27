@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_incidencia_list">
+            <field name="name">casa_rural.incidencia.list</field>
+            <field name="model">casa_rural.incidencia</field>
+            <field name="arch" type="xml">
+                <list string="Incidencias">
+                    <field name="servicio_id"/>
+                    <field name="fecha_incidencia"/>
+                    <field name="estado_incidencia"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_incidencia_form">
+            <field name="name">casa_rural.incidencia.form</field>
+            <field name="model">casa_rural.incidencia</field>
+            <field name="arch" type="xml">
+                <form string="Incidencia">
+                    <sheet>
+                        <group>
+                            <field name="servicio_id"/>
+                            <field name="fecha_incidencia"/>
+                            <field name="estado_incidencia"/>
+                        </group>
+                        <group>
+                            <field name="descripcion" colspan="2"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_incidencia">
+            <field name="name">Incidencias</field>
+            <field name="res_model">casa_rural.incidencia</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>
