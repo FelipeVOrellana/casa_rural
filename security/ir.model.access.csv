@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_casa_rural_huesped,access_huesped,casa_rural.model_casa_rural_huesped,,1,1,1,1
+access_casa_rural_estancia,access_estancia,casa_rural.model_casa_rural_estancia,,1,1,1,1
+access_casa_rural_factura,access_factura,casa_rural.model_casa_rural_factura,,1,1,1,1
+access_casa_rural_habitacion,access_habitacion,casa_rural.model_casa_rural_habitacion,,1,1,1,1

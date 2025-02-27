@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_factura_list">
+            <field name="name">casa_rural.factura.list</field>
+            <field name="model">casa_rural.factura</field>
+            <field name="arch" type="xml">
+                <list string="Facturas">
+                    <field name="estancia_id"/>
+                    <field name="monto"/>
+                    <field name="fecha_emision"/>
+                    <field name="estado_pago"/>
+                    <field name="metodo_pago"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_factura_form">
+            <field name="name">casa_rural.factura.form</field>
+            <field name="model">casa_rural.factura</field>
+            <field name="arch" type="xml">
+                <form string="Factura">
+                    <sheet>
+                        <group>
+                            <field name="estancia_id"/>
+                            <field name="monto"/>
+                            <field name="fecha_emision"/>
+                            <field name="estado_pago"/>
+                            <field name="metodo_pago"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_factura">
+            <field name="name">Facturas</field>
+            <field name="res_model">casa_rural.factura</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+{
+    'name': 'Casa Rural',
+    'version': '1.0',
+    'summary': 'Gestión de una casa rural en Odoo 18',
+    'description': 'Módulo para gestionar huéspedes, estancias, facturación, habitaciones y más.',
+    'category': 'Hospitality',
+    'author': 'Tu Nombre',
+    'website': 'https://tuweb.com',
+    'depends': ['base'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/menu.xml',
+        'views/huesped_views.xml',
+        'views/estancia_views.xml',
+        'views/factura_views.xml',
+        'views/habitacion_views.xml',
+    ],
+    'installable': True,
+    'application': True,
+}

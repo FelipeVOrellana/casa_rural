@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="casa_rural.view_habitacion_list">
+            <field name="name">casa_rural.habitacion.list</field>
+            <field name="model">casa_rural.habitacion</field>
+            <field name="arch" type="xml">
+                <list string="Habitaciones">
+                    <field name="numero"/>
+                    <field name="tipo"/>
+                    <field name="estado"/>
+                    <field name="precio_noche"/>
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_rural.view_habitacion_form">
+            <field name="name">casa_rural.habitacion.form</field>
+            <field name="model">casa_rural.habitacion</field>
+            <field name="arch" type="xml">
+                <form string="Habitación">
+                    <sheet>
+                        <group>
+                            <field name="numero"/>
+                            <field name="tipo"/>
+                            <field name="estado"/>
+                            <field name="precio_noche"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_habitacion">
+            <field name="name">Habitaciones</field>
+            <field name="res_model">casa_rural.habitacion</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

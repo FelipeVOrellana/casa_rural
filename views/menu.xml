@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Menú padre: Casa Rural -->
+        <menuitem id="casa_rural.menu_root" name="Casa Rural" sequence="10"/>
+
+        <!-- Submenú: Habitaciones -->
+        <menuitem id="casa_rural.menu_habitacion_root" name="Habitaciones" parent="casa_rural.menu_root" sequence="20"/>
+        <menuitem id="casa_rural.menu_habitacion" name="Habitaciones" parent="casa_rural.menu_habitacion_root" action="casa_rural.action_habitacion" sequence="10"/>
+
+        <!-- Submenú: Huéspedes -->
+        <menuitem id="casa_rural.menu_huesped_root" name="Huéspedes" parent="casa_rural.menu_root" sequence="30"/>
+        <menuitem id="casa_rural.menu_huesped" name="Huéspedes" parent="casa_rural.menu_huesped_root" action="casa_rural.action_huesped" sequence="10"/>
+
+        <!-- Submenú: Estancias -->
+        <menuitem id="casa_rural.menu_estancia_root" name="Estancias" parent="casa_rural.menu_root" sequence="40"/>
+        <menuitem id="casa_rural.menu_estancia" name="Estancias" parent="casa_rural.menu_estancia_root" action="casa_rural.action_estancia" sequence="10"/>
+
+        <!-- Submenú: Facturas -->
+        <menuitem id="casa_rural.menu_factura_root" name="Facturas" parent="casa_rural.menu_root" sequence="40"/>
+        <menuitem id="casa_rural.menu_factura" name="Facturas" parent="casa_rural.menu_factura_root" action="casa_rural.action_factura" sequence="10"/>
+    </data>
+</odoo>
