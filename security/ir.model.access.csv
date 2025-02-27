@@ -3,7 +3,7 @@ access_casa_rural_huesped,access_huesped,casa_rural.model_casa_rural_huesped,,1,
 access_casa_rural_estancia,access_estancia,casa_rural.model_casa_rural_estancia,,1,1,1,1
 access_casa_rural_factura,access_factura,casa_rural.model_casa_rural_factura,,1,1,1,1
 access_casa_rural_habitacion,access_habitacion,casa_rural.model_casa_rural_habitacion,,1,1,1,1
-access_casa_rural_canalcomunicacion,access_canalcomunicacion,casa_rural.model_casa_rural_canalcomunicacion,,1,1,1,1
+access_casa_rural_canal_comunicacion,access_canal_comunicacion,casa_rural.model_casa_rural_canal_comunicacion,,1,1,1,1
 access_casa_rural_empleado,access_empleado,casa_rural.model_casa_rural_empleado,,1,1,1,1
 access_casa_rural_equipo,access_equipo,casa_rural.model_casa_rural_equipo,,1,1,1,1
 access_casa_rural_extra,access_extra,casa_rural.model_casa_rural_extra,,1,1,1,1
@@ -13,6 +13,16 @@ access_casa_rural_pago,access_pago,casa_rural.model_casa_rural_pago,,1,1,1,1
 access_casa_rural_proveedor,access_proveedor,casa_rural.model_casa_rural_proveedor,,1,1,1,1
 access_casa_rural_reserva,access_reserva,casa_rural.model_casa_rural_reserva,,1,1,1,1
 access_casa_rural_servicio,access_servicio,casa_rural.model_casa_rural_servicio,,1,1,1,1
-access_casa_rural_tareamantenimiento,access_tareamantenimiento,casa_rural.model_casa_rural_tareamantenimiento,,1,1,1,1
+access_casa_rural_tarea_mantenimiento,access_tarea_mantenimiento,casa_rural.model_casa_rural_tarea_mantenimiento,,1,1,1,1
 access_casa_rural_tarifa,access_tarifa,casa_rural.model_casa_rural_tarifa,,1,1,1,1
-access_casa_rural_tiposervicio,access_tiposervicio,casa_rural.model_casa_rural_tiposervicio,,1,1,1,1
+access_casa_rural_tipo_servicio,access_tipo_servicio,casa_rural.model_casa_rural_tipo_servicio,,1,1,1,1
+access_casa_rural_facturacion_clientes,access_facturacion_clientes,casa_rural.model_casa_rural_facturacion_clientes,,1,1,1,1
+access_casa_rural_pagos_clientes,access_pagos_clientes,casa_rural.model_casa_rural_pagos_clientes,,1,1,1,1
+access_casa_rural_producto,access_producto,casa_rural.model_casa_rural_producto,,1,1,1,1
+access_casa_rural_detalle_pedido,access_detalle_pedido,casa_rural.model_casa_rural_detalle_pedido,,1,1,1,1
+access_casa_rural_facturacion_proveedores,access_facturacion_proveedores,casa_rural.model_casa_rural_facturacion_proveedores,,1,1,1,1
+access_casa_rural_pagos_proveedores,access_pagos_proveedores,casa_rural.model_casa_rural_pagos_proveedores,,1,1,1,1
+access_casa_rural_clientes_com,access_clientes_com,casa_rural.model_casa_rural_clientes_com,,1,1,1,1
+access_casa_rural_extras_reservas,access_extras_reservas,casa_rural.model_casa_rural_extras_reservas,,1,1,1,1
+access_casa_rural_contrato,access_contrato,casa_rural.model_casa_rural_contrato,,1,1,1,1
+access_casa_rural_pedido,access_pedido,casa_rural.model_casa_rural_pedido,,1,1,1,1
