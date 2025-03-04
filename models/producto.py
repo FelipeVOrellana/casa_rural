@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class Producto(models.Model):
     _name = 'casa_rural.producto'
     _description = 'Productos: Productos que se pueden pedir'

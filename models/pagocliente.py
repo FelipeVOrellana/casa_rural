@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class PagosClientes(models.Model):
     _name = 'casa_rural.pagos_clientes'
     _description = 'Pagos Clientes: Pagos efectuados para cada factura de cliente'

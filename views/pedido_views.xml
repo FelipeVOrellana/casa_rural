@@ -30,7 +30,8 @@
                             <page string="Detalle del Pedido">
                                 <field name="detalle_ids">
                                     <list>
-                                        <field name="producto"/>
+                                        <field name="pedido_id"/>
+                                        <field name="producto_id"/>
                                         <field name="cantidad"/>
                                         <field name="precio_unitario"/>
                                     </list>
@@ -39,9 +40,9 @@
                             <page string="Facturación">
                                 <field name="factura_ids">
                                     <list>
-                                        <field name="numero_factura"/>
                                         <field name="fecha_emision"/>
-                                        <field name="monto"/>
+                                        <field name="monto_total"/>
+                                        <field name="estado_pago"/>
                                     </list>
                                 </field>
                             </page>

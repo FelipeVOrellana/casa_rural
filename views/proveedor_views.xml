@@ -31,7 +31,6 @@
                             <page string="Contratos">
                                 <field name="contrato_ids">
                                     <list>
-                                        <field name="nombre"/>
                                         <field name="fecha_inicio"/>
                                         <field name="fecha_fin"/>
                                     </list>
@@ -40,7 +39,6 @@
                             <page string="Pedidos">
                                 <field name="pedido_ids">
                                     <list>
-                                        <field name="nombre"/>
                                         <field name="fecha_pedido"/>
                                         <field name="estado"/>
                                     </list>

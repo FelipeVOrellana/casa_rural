@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class Contrato(models.Model):
     _name = 'casa_rural.contrato'
     _description = 'Contratos: Acuerdos contractuales con proveedores'

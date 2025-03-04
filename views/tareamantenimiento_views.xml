@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
+        <record id="view_tarea_mantenimiento_kanban" model="ir.ui.view">
+            <field name="name">casa_rural.tarea_mantenimiento.kanban</field>
+            <field name="model">casa_rural.tarea_mantenimiento</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_card">
+                                <field name="nombre_tarea"/>
+                                <field name="estado" widget="statusbar"/>
+                                <field name="fecha_programada"/>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
         <record model="ir.ui.view" id="casa_rural.view_tarea_mantenimiento_list">
             <field name="name">casa_rural.tarea_mantenimiento.list</field>
             <field name="model">casa_rural.tarea_mantenimiento</field>
@@ -52,7 +69,7 @@
         <record model="ir.actions.act_window" id="action_tarea_mantenimiento">
             <field name="name">Tareas de Mantenimiento</field>
             <field name="res_model">casa_rural.tarea_mantenimiento</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
     </data>
 </odoo>

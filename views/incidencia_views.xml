@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
+        <record id="view_incidencia_kanban" model="ir.ui.view">
+            <field name="name">casa_rural.incidencia.kanban</field>
+            <field name="model">casa_rural.incidencia</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_card">
+                                <field name="servicio_id"/>
+                                <field name="descripcion"/>
+                                <field name="estado_incidencia" widget="statusbar"/>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
         <record model="ir.ui.view" id="casa_rural.view_incidencia_list">
             <field name="name">casa_rural.incidencia.list</field>
             <field name="model">casa_rural.incidencia</field>
@@ -35,7 +52,7 @@
         <record model="ir.actions.act_window" id="action_incidencia">
             <field name="name">Incidencias</field>
             <field name="res_model">casa_rural.incidencia</field>
-            <field name="view_mode">list,form</field>
+            <field name="view_mode">kanban,list,form</field>
         </record>
     </data>
 </odoo>

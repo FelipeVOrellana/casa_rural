@@ -32,7 +32,7 @@
     <menuitem id="menu_comunicacion_clientes" name="Comunicación con los Clientes" parent="menu_casa_rural" sequence="4" />
     <menuitem id="menu_clientes_com" name="Clientes" parent="menu_comunicacion_clientes" action="action_clientes_com" sequence="1" />
     <menuitem id="menu_mensajes" name="Mensajes" parent="menu_comunicacion_clientes" action="action_mensaje" sequence="2" />
-    <menuitem id="menu_canales_comunicacion" name="Canales de Comunicación" parent="menu_comunicacion_clientes" action="action_canales_comunicacion" sequence="3" />
+    <menuitem id="menu_canales_comunicacion" name="Canales de Comunicación" parent="menu_comunicacion_clientes" action="action_canal_comunicacion" sequence="3" />
 
     <!-- Gestión de Mantenimiento y Limpieza -->
     <menuitem id="menu_mantenimiento" name="Gestión de Mantenimiento y Limpieza" parent="menu_casa_rural" sequence="5" />

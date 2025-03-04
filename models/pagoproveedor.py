@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class PagosProveedor(models.Model):
     _name = 'casa_rural.pagos_proveedores'
     _description = 'Pagos Proveedores: Registra los pagos realizados a proveedores'

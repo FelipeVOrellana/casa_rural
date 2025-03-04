@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class ClientesCom(models.Model):
     _name = 'casa_rural.clientes_com'
     _description = 'Clientes Com: Datos de clientes para la comunicación'

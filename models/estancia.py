@@ -1,13 +1,15 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 class Estancia(models.Model):
     _name = 'casa_rural.estancia'
     _description = 'Estancias: Registra cada periodo de estancia de un huésped'
 
     huesped_id = fields.Many2one('casa_rural.huesped', string='Huésped', required=True)
+    huesped_nombre = fields.Char(related='huesped_id.nombre', string='Nombre del Huésped', store=True)
     fecha_entrada = fields.Date(string='Fecha de Entrada')
     fecha_salida = fields.Date(string='Fecha de Salida')
     precio_total = fields.Float(string='Precio Total')
+
     habitacion_ids = fields.Many2many(
         'casa_rural.habitacion',
         'casa_rural_estancia_habitacion_rel',

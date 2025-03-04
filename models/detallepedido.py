@@ -1,3 +1,5 @@
+from odoo import models, fields, api
+
 class DetallePedido(models.Model):
     _name = 'casa_rural.detalle_pedido'
     _description = 'Detalle del Pedido: Especifica los productos y cantidades en cada pedido'

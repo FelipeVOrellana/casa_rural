@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class FacturacionProveedore(models.Model):
     _name = 'casa_rural.facturacion_proveedores'
     _description = 'Facturación Proveedores: Registra la facturación asociada a los pedidos de proveedores'

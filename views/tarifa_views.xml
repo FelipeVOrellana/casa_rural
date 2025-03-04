@@ -34,9 +34,8 @@
                             <page string="Habitaciones">
                                 <field name="habitacion_ids">
                                     <list>
-                                        <field name="nombre"/>
-                                        <field name="tipo_habitacion"/>
-                                        <field name="capacidad"/>
+                                        <field name="tipo"/>
+                                        <field name="estado"/>
                                     </list>
                                 </field>
                             </page>

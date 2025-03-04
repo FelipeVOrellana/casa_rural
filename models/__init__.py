@@ -21,9 +21,9 @@ from . import tarifa
 from . import cliente
 from . import contrato
 from . import detallepedido
-from . import extrareservas
-from . import facturacionclientes
-from . import facturacionproveedores
+from . import extrasreservas
+from . import facturacioncliente
+from . import facturacionproveedor
 from . import pagocliente
 from . import pagoproveedor
 from . import pedido

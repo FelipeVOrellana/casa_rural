@@ -1,3 +1,5 @@
+from odoo import models, fields
+
 class CasaRuralExtrasReservas(models.Model):
     _name = 'casa_rural.extras_reservas'
     _description = 'Extras Reservas: Extras añadidos a cada reserva con cantidad y precio total'

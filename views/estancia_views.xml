@@ -6,7 +6,7 @@
             <field name="model">casa_rural.estancia</field>
             <field name="arch" type="xml">
                 <list string="Estancias">
-                    <field name="huesped_id"/>
+                    <field name="huesped_nombre" string="Nombre del Huésped"/>                    
                     <field name="fecha_entrada"/>
                     <field name="fecha_salida"/>
                     <field name="precio_total"/>
@@ -21,7 +21,7 @@
                 <form string="Estancia">
                     <sheet>
                         <group>
-                            <field name="huesped_id"/>
+                            <field name="huesped_id"/>  
                             <field name="fecha_entrada"/>
                             <field name="fecha_salida"/>
                             <field name="precio_total"/>
@@ -37,7 +37,7 @@
                                 </field>
                             </page>
                             <page string="Facturas">
-                                <field name="factura_ids">
+                                <field name="facturacion_ids">
                                     <list>
                                         <field name="estancia_id"/>
                                         <field name="monto"/>
