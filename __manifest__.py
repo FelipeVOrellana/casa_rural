@@ -1,16 +1,16 @@
+# -*- coding: utf-8 -*-
 {
-    'name': 'Casa Rural',
-    'version': '1.0',
-    'summary': 'Módulo para la gestión de una casa rural',
-    'description': 'Este módulo permite gestionar reservas, clientes, facturas, etc. de una casa rural.',
-    'author': 'Tu Nombre',
+    'name': "Casa Rural",
+    'summary': "Módulo para la gestión de una casa rural",
+    'description': "Este módulo permite gestionar reservas, clientes, facturas, etc. de una casa rural.",
+    'author': "Felipe, Miguel, Alejandro",
     'website': 'http://www.tupaginaweb.com',
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '1.0',
+
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/canalcomunicacion_views.xml',
         'views/clientes_views.xml',
         'views/contrato_views.xml',
         'views/detallepedido_views.xml',
@@ -39,7 +39,9 @@
         'views/templates.xml',
         'views/tiposervicio_views.xml',
         'views/views.xml',
+        'views/canalcomunicacion_views.xml',
         'views/menu.xml',
+        'views/dashboard_view.xml',
     ],
     'installable': True,
     'application': True,

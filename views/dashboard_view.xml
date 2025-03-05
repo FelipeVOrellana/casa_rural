@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_resumenhabitacionesreservas_kanban" model="ir.ui.view">
+        <field name="name">casa_rural.resumenhabitacionesreservas.kanban</field>
+        <field name="model">casa_rural.resumenhabitacionesreservas</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card" style="background-color: #f0f0f0; border: 1px solid #ddd; margin: 5px; padding: 10px;">
+                            <strong><field name="tipo_habitacion"/></strong>
+                            <p>Habitaciones Totales: <field name="habitaciones_totales"/> Habitaciones</p>
+                            <p>Disponibles: <field name="habitaciones_disponibles"/> Habitaciones</p>
+                            <p>Ocupadas: <field name="habitaciones_ocupadas"/> Habitaciones</p>
+                            <p>Ocupación (%): <field name="porcentaje_ocupacion"/> %</p>
+                            <p>Reservas Activas: <field name="reservas_activas"/></p>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_dashboard_resumen_habitaciones_reservas" model="ir.actions.act_window">
+        <field name="name">Dashboard Habitaciones y Reservas</field>
+        <field name="res_model">casa_rural.resumenhabitacionesreservas</field>
+        <field name="view_mode">kanban</field>
+        <field name="help">Este panel muestra un resumen de las habitaciones y reservas.</field>
+    </record>
+
+    <menuitem id="menu_dashboard_resumen_habitaciones_reservas"
+              name="Dashboard Habitaciones y Reservas"
+              parent="menu_casa_rural"
+              action="action_dashboard_resumen_habitaciones_reservas"/>
+</odoo>

@@ -28,3 +28,4 @@ from . import pagocliente
 from . import pagoproveedor
 from . import pedido
 from . import producto
+from . import resumenhabitacionesreservas

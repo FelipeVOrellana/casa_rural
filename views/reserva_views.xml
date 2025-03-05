@@ -27,6 +27,7 @@
                     <field name="fecha_inicio"/>
                     <field name="fecha_fin"/>
                     <field name="cantidad_personas"/>
+                    <field name="estancias_ids" widget="many2many_tags"/>
                 </list>
             </field>
         </record>
@@ -42,6 +43,7 @@
                             <field name="fecha_inicio"/>
                             <field name="fecha_fin"/>
                             <field name="cantidad_personas"/>
+                            <field name="estancias_ids" widget="many2many_tags"/>
                         </group>
                         <notebook>
                             <page string="Extras Agregados">

@@ -8,3 +8,9 @@ class Producto(models.Model):
     descripcion = fields.Text(string='Descripción')
     precio_unitario = fields.Float(string='Precio Unitario')
     stock_disponible = fields.Integer(string='Stock Disponible')
+    pedido_ids = fields.Many2many(
+        'casa_rural.pedido',
+        'producto_pedido_rel',
+        'producto_id', 'pedido_id',
+        string='Pedidos'
+    )

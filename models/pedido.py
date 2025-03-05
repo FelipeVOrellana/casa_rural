@@ -15,3 +15,9 @@ class Pedido(models.Model):
         'pedido_id', 'factura_id',
         string='Facturación'
     )
+    producto_ids = fields.Many2many(
+        'casa_rural.producto',
+        'producto_pedido_rel',
+        'pedido_id', 'producto_id',
+        string='Productos'
+    )
